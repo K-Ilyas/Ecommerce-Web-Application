@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
+
+* {
+    font-family: "Nunito", sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.search-form {
+    margin-top: 25px;
+}
+
+button:focus {
+  background-color: transparent;
+}
+
+
+#keywordsTitle, .keywords, .keywords li {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 10px;
+}
+#keywordsTitle {
+    font-size: 19.2px;
+}
+
+.keywords li a, .keywords li span {
+    color: white;
+    font-weight: 700;
+    font-size: 11.2px;
+    text-decoration: none;
+    padding: 4.8px 11.2px;
+    border: 2px solid white;
+    border-radius:5px;
+    background-color: rgba(224, 240, 255, 0.157);
+    cursor: pointer;
+}
+
+.keywords li a:hover, .keywords li span:hover {
+    background-color: white;
+    color: rgb(21, 195, 172);
+}
+
+
+
+.btn-search {
+    width: 100%;
+    height: 3rem;
+    font-family: "Open Sans", sans-serif, Arial;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+    border-radius: 2px;
+    background-color: rgb(23, 221, 194) !important;
+    margin-top: 0px;
+  }
+.btn-search:hover {
+  background-color: rgb(25, 240, 211) !important;
+}
+
+.keywordsearch {
+    text-align: left;
+    margin-top: 0.6rem;
+}
+
+
+.n-logo {
+    margin-top: 100px;
+}
+
+.textSearch-container {
+  position: relative;
+}
+.search-logo {
+  position: absolute;
+  top: 18px;
+  right: 29px;
+  width: 0;
+  height: 0;
+}
+
+/* Search box */
+
+.react-autosuggest__input, .textSearch {
+    border: 1px solid white;
+    border-radius: 2px;
+    height: 3rem;
+    width: 100%;
+    padding: 8px 16px;
+    padding-right: 40px;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 0.8rem;
+}
+
+.react-autosuggest__input--focused {
+    outline: none;
+  }
+  
+  .react-autosuggest__input--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .react-autosuggest__suggestions-container {
+    display: none;
+  }
+  
+  .react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+  }
+  
+  .react-autosuggest__suggestions-list {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: rgb(61, 61, 61);
+  }
+  
+  .react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 7px 20px;
+    border-top: 1px solid rgb(221, 221, 221);
+    margin: 0;
+  }
+  
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+  }
+  
+  .react-autosuggest__section-title {
+    text-align: left;
+    background-color: #2CA8FF;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+  }
+
+  /* End search box */
+
+.search-form .col-sm-12, .search-form .col-md-4, .search-form .col-lg-2 {
+    padding: 5px;
+}
+
+@media (max-width:768px){
+    .n-logo {
+        margin-top: 200px;
+        width: 150px;
+    }
+    .keywordsearch {
+        margin-top: 50px;
+    }
+    #keywordsTitle {
+        margin-bottom: 0.4rem;
+        display: block;
+    }
+    .search-form .col-sm-12, .search-form .col-md-4, .search-form .col-lg-2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* select style */
+
+.react-select-header {
+    width: 100%;
+}
+
+.react-select__control {
+    margin-bottom: 0.8rem;
+    border-radius: 3px !important;
+    border-color: transparent;
+}
+
+.react-select__value-container {
+    height: 3rem;
+}
+
+.react-select__menu-list {
+    color: black;
+}

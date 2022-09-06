@@ -1,0 +1,87 @@
+.page-header-small-search {
+    min-height: 500px !important;
+    overflow: visible !important;
+}
+
+.page-header-small-search h1 {
+    margin-bottom: 20px;
+    margin-top: 90px;
+    text-align: left;
+    font-weight: 900;
+    text-shadow: 1px 0 1px rgba(0,0,0,.4);
+    font-size: 40px;
+}
+
+.page-header-small-search p {
+    margin-bottom: 50px;
+    max-width: 640px;
+    text-align: left;
+    font-size: 21px;
+    text-shadow: 1px 0 1px rgba(0,0,0,.6);
+    line-height: 27px;
+    font-weight: 400;
+}
+
+.page-header-small {
+    min-height: 60px !important;
+    overflow: visible !important;
+}
+
+.small-header-form {
+    padding-top: 5px !important;
+    padding-bottom: 0px !important;
+}
+
+.small-header-form .col-sm-12 {
+    padding-right: 0;
+}
+
+.page-header-image-small {
+    background-image: linear-gradient(to right, rgb(243, 252, 255) , rgb(138, 230, 255));
+}
+
+.small-header{
+    padding-right: 55px;
+    padding-top: 5px !important;
+    padding-bottom: 0px !important;
+}
+
+.btn-search-small-header {
+    background-color: rgb(0, 195, 255); 
+    background-image: linear-gradient(to right, rgb(160, 215, 255), #2CA8FF);
+}
+
+.search-navbar {
+    display: none;
+    width: 100%;
+    text-align: right;
+}
+
+.search-navbar button {
+    color: white;
+    background-color: transparent;
+    border: 0;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    outline: none !important;
+}
+
+.search-navbar i {
+    margin-top: 9px;
+    margin-right: 9px;
+
+}
+
+.page-header-small-hide {
+    display: block;
+}
+
+@media (max-width: 992px){
+    .page-header-small-hide  {
+        display: none;
+    }
+    .search-navbar {
+        display: block;
+    }
+}

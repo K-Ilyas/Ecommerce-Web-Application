@@ -1,0 +1,244 @@
+body {
+	background-color: rgb(239, 239, 239);;
+}
+
+.main-profile-container {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* Profile menu */
+
+.profile-menu {
+	margin-bottom: 20px;
+}
+
+.list-group-item.list-group-item-action.active {
+	background-color: #2CA8FF !important;
+	border-color: #2CA8FF !important;
+}
+
+/* content */
+
+.profile-content {
+	width: 850px;
+	margin-bottom: 100px;
+}
+
+/* Settings page */
+
+label {
+	color: rgb(154, 154, 154);
+}
+
+.title-edit-profile {
+	color: rgb(44, 44, 44);
+	font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+/* Centre d'intérets */
+.centre-interets ul {
+	padding: 0;
+}
+
+.centre-interets .chosen-interet li {
+	display: inline-block;
+	border: 1px solid #2CA8FF;
+	padding: 2px 8px 2px 8px;
+	border-radius: 30px;
+	color: white;
+	background-color: #2CA8FF;
+	list-style: none;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.centre-interets .chosen-interet li:hover {
+	border: 1.2px solid #2CA8FF;
+	color: #2CA8FF;
+	background-color: white;
+}
+
+.centre-interets .not-chosen-interet li {
+	display: inline-block;
+	border: 1.2px solid #2CA8FF;
+	padding: 2px 8px 2px 8px;
+	border-radius: 30px;
+	color: #2CA8FF;
+	background-color: white;
+	list-style: none;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.centre-interets .not-chosen-interet li:hover {
+	border: 1px solid #2CA8FF;
+	color: white;
+	background-color: #2CA8FF;
+}
+
+@media (max-width: 1200px){
+	.profile-content {
+		width: 100%;
+	}
+}
+
+
+.react-select-profile .react-select__value-container {
+	height: 2rem;
+}
+
+.react-select-profile .react-select__control {
+	border-radius: 80px;
+	border-color: #E3E3E3;
+}
+
+.edit-button {
+	float: right;
+	margin-top: -40px;
+	margin-right: 20px;
+	padding: 5px 10px;
+}
+
+.error-message-profile {
+	display: none;
+    padding: 0;
+    margin: 0;
+    color: goldenrod;
+    font-size: 12px;
+    text-align: left;
+}
+
+.success-message {
+	display: none;
+	margin: 0;
+	margin-left: 20px;
+	margin-top: -30px;
+    color: green;
+    font-size: 18px;
+    text-align: left;
+}
+
+.Ptypes-profile {
+    text-align: left;
+	font-size: 11.5px;
+	margin-top: 30px;
+}
+
+.Ptypes-profile td {
+    vertical-align: top;
+}
+
+.list-group.tests{
+    max-height: 300px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.test-button {
+	border: 1px solid rgb(200, 200, 200);
+	padding: 8px;
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+
+/* Evaluations */
+
+.evaluationHistory {
+	background-color: white;
+	width: 100%;
+}
+
+@media (max-width: 770px){
+    .evaluation-profile {
+        display: block !important;
+    }
+ }
+
+
+ .evaluation-controls-profile i {
+	font-size: 15px;
+	margin-left: 3px;
+ }
+
+ .evaluation-controls-profile .edit-eval {
+	 margin: 0;
+	 margin-bottom: 10px;
+	 width: 100%;
+	 color: #4bb5ff;
+	 border: 1px solid #4bb5ff;
+	 background-color: transparent !important;
+	 padding: 10px 0px;
+ }
+
+ .evaluation-controls-profile .delete-eval {
+	margin: 0;
+	width: 100%;
+	color: #ffbe55;
+	border: 1px solid #ffbe55;
+	background-color: transparent !important;
+	padding: 10px 0px;
+
+}
+
+/* Update profile picture */
+
+.photo-container{
+	background-color: black;
+	position: relative;
+}
+
+.photo-container p {
+	display: none;
+	position: absolute;
+	margin-top: 70px;
+	margin-left: 0px;
+	color: white;
+	font-weight: 600;
+	z-index: 10;	
+	font-size: 14px;
+	line-height: 18px;
+	background-color: rgba(0, 0, 0, 0.418);
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.63), rgba(255, 255, 255, 0.096));
+	padding: 10px 35px;
+	cursor: pointer;
+}
+
+.favori-card {
+	cursor: pointer;
+}
+
+.favori-card p {
+	-webkit-line-clamp: 3 !important;
+}
+
+.favori-card:hover {
+	box-shadow: 1px 3px 3px 2px rgba(197, 197, 197, 0.6) !important;
+}
+
+/* events */
+
+.event-profile-style ul{
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.event-profile-style li {
+	box-shadow: 0 0 5px rgb(192, 192, 192);
+	width: 300px;
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	display: inline-block;
+}

@@ -1,0 +1,9 @@
+.dropdown-menu{
+    min-width: 100px !important;
+}
+
+.dropdown-menu i {
+    font-size: 15px;
+    padding-right: 10px;
+    margin-bottom: 4px;
+}

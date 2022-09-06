@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,700,800");
+.main {
+    background-color: rgb(239, 239, 239) !important;
+}
+
+.mainContainer {
+    padding-top: 20px;
+    width: 1020px;
+    margin-left: 255px;
+    margin-right: 255px;
+}
+
+.mainContainerHistory {
+    padding-top: 20px;
+    width: 1500px;
+    margin-left: 255px;
+    margin-right: 255px;
+}
+
+.container-left {
+    width: 690px;
+    background-color: white;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.container-non {
+    background-color: white;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 600px;
+}
+
+.container-left h2 {
+    font-family: "Open Sans", sans-serif, Arial;
+    line-height: 31px;
+    letter-spacing: 0.02rem;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(63, 63, 63);
+    margin-bottom: 20px;
+}
+
+.container-left h2 span {
+    border-bottom: solid 3px rgb(63, 63, 63);
+}
+
+.container-non h2 span {
+    border-bottom: solid 3px rgb(63, 63, 63);
+}
+
+.container-right {
+    width: 310px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:1565px) {
+    .mainContainer {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .mainContainerHistory {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width:1080px) {
+    .mainContainer {
+        width: 100%;
+        margin-left: 20px;
+        padding-right: 40px;
+    }
+    .mainContainerHistory {
+        width: 100%;
+        margin-left: 20px;
+        padding-right: 40px;
+    }
+    .container-left {
+        width: 100%;
+    }
+    .container-right {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:991px) {
+    .mainContainer {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 20px;
+    }
+    .mainContainerHistory {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 20px;
+    }
+}
+
+
+/* Style category choices */
+
+
+/* My color #2CA8FF */
+
+.categoryChoice a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif, Arial;
+    font-weight: 300;
+    color: rgb(65, 65, 65);
+    font-size: 14.5px;
+    line-height: 23.2px;
+    padding: 8px 10px 8px 10px;
+    /* ,right , ,left  */
+}
+
+.categoryChoice ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categoryChoice ul li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.categoryChoice i {
+    position: absolute;
+    color: #2CA8FF;
+    font-size: 26px;
+    padding: 10px;
+    padding-left: 0px;
+    padding-top: 0px;
+    left: -22px;
+    top: 8.5px;
+}
+
+@media (max-width:640px) {
+    .categoryChoice a {
+        border: 1px solid #2CA8FF;
+        padding: 6px 10px 6px 10px;
+        border-radius: 30px;
+        color: white;
+        background-color: #2CA8FF;
+    }
+    .category-icon-hide {
+        display: none;
+    }
+    .categoryChoice ul {
+        display: block;
+        padding: 0px;
+    }
+    .categoryChoice ul li {
+        line-height: 30px;
+    }
+}
+
+@media (max-width:470px) {
+    .categoryChoice ul {
+        height: 250px;
+    }
+}
+
+
+/* galerie css */
+
+.galerie {
+    margin-bottom: 10px;
+}
+
+
+/* svg image */
+
+.search-region {
+    position: relative;
+    height: 500px;
+}
+
+.Morocco-regions-svg {
+    position: absolute;
+    height: 500px;
+    transform: rotate(-3.5deg);
+    top: 0;
+    left: 170px;
+}
+
+.Morocco-regions-svg path {
+    fill: #686868;
+    transition: all 0.2s ease-in-out;
+}
+
+.Morocco-regions-svg path:hover {
+    fill: #2CA8FF;
+}
+
+.hoverRegion {
+    fill: #2CA8FF !important;
+}
+
+.Regions-list {
+    list-style: none;
+    padding: 10px;
+}
+
+.Regions-list li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #353535;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.Regions-list li a:hover {
+    color: #2CA8FF;
+}
+
+.fa-compass {
+    color: #2CA8FF;
+}
+
+@media (max-width:1080px) {
+    .Morocco-regions-svg {
+        width: 100%;
+        left: 100px;
+    }
+}
+
+@media (max-width:691px) {
+    .search-region {
+        height: auto;
+    }
+    .Morocco-regions-svg {
+        height: 70%;
+        width: 100%;
+        top: 30px;
+        left: 110px;
+    }
+}
+
+
+/* Formation choice */
+
+.formationChoice {
+    height: 200px;
+}
+
+.formationChoice a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif, Arial;
+    font-weight: 300;
+    color: rgb(65, 65, 65);
+    font-size: 14.5px;
+    line-height: 23.2px;
+    padding: 8px 10px 8px 10px;
+    /* ,right , ,left  */
+}
+
+.formationChoice ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.formationChoice ul li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 200px;
+}
+
+.formationChoice i {
+    position: absolute;
+    color: #2CA8FF;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 0px;
+    padding-top: 0px;
+    left: -7px;
+    top: 15px;
+}
+
+@media (max-width:640px) {
+    .formationChoice a {
+        border: 1px solid #2CA8FF;
+        padding: 6px 10px 6px 10px;
+        border-radius: 30px;
+        color: white;
+        background-color: #2CA8FF;
+    }
+    .formationChoice ul {
+        display: block;
+        padding: 0px;
+        justify-content: space-around;
+    }
+    .formationChoice ul li {
+        line-height: 30px;
+        padding-bottom: 10px;
+        width: auto;
+    }
+}
+
+@media (max-width:470px) {
+    .formationChoice ul {
+        height: 300px;
+    }
+}
+
+
+/* CarrerTest */
+
+.CarrerTest h2,
+.newsLetter h2,
+.productShow h2 {
+    font-family: "Open Sans", sans-serif, Arial;
+    line-height: 28.8px;
+    letter-spacing: 0.02rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(33, 33, 33);
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.CarrerTest p,
+.newsLetter p,
+.productShow p {
+    font-family: "Open Sans", sans-serif, Arial;
+    color: rgb(33, 33, 33);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.2px;
+    padding-bottom: 8px;
+}
+
+.CarrerTest a,
+.CarrerTest button {
+    display: block;
+    background-color: #ececec;
+    font-family: "Open Sans", sans-serif, Arial;
+    color: rgb(46, 46, 46);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 80px 15px 80px;
+    text-decoration: none;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.CarrerTest a:hover,
+.CarrerTest button:hover {
+    background-color: #f3f3f3;
+}
+
+.rightContainer-BasicStyle {
+    background-color: white;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+
+/* News letter */
+
+.newsLetter h2,
+.productShow h2 {
+    margin-bottom: 10px;
+}
+
+.newsLetter button {
+    display: block;
+    background-color: rgb(23, 221, 194) !important;
+    font-family: "Open Sans", sans-serif, Arial;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    border: transparent;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.productShow button {
+    font-family: "Open Sans", sans-serif, Arial;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 0px 15px 0px;
+    text-decoration: none;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    border: transparent;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.newsLetter button:hover,
+.productShow button:hover {
+    background-color: rgb(25, 240, 211) !important;
+}
+
+#emailNewsLetter {
+    height: 2.5rem;
+    border-radius: 4px;
+}
+
+.newsLetter label,
+.productShow label {
+    font-family: "Open Sans", sans-serif, Arial;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(33, 33, 33);
+    margin-top: 5px;
+}
+
+#newsLetterForm {
+    width: 260px;
+    margin: 0 auto;
+}
+
+.product_card {
+    margin-bottom: 20px;
+}
+
+.avisBtn-card {
+    display: inline !important;
+    font-family: "Open Sans", sans-serif, Arial !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    transition: all .2s ease-in-out !important;
+    border: transparent;
+    outline: none !important;
+    margin-right: "20px";
+    width: 30%;
+}
